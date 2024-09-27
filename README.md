@@ -2,7 +2,7 @@ Currency Converter & Calculator
 
 This service calculates the customer's bill, based on the items, their quantity and category.
 It then applies discounts based on various conditions and provides the total bill amount in the required currency.
-The following currency rate converter is sued for this service : https://open.er-api.com/v6/latest/
+The following currency rate converter is used for this service : https://open.er-api.com/v6/latest/
 
 Sample Request :
 
