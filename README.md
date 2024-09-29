@@ -7,28 +7,27 @@ The following currency rate converter is used for this service : https://open.er
 Sample Request :
 
 curl --location 'http://localhost:8080/api/calculate' \
---header 'API-Key: valid-api-key' \
---header 'API-Secret: valid-api-secret' \
+--header 'X-API-KEY: test' \
 --header 'Content-Type: application/json' \
---header 'Cookie: JSESSIONID=816753487BB8ED76E89C9BC34C38ADC3' \
+--header 'Cookie: JSESSIONID=3E31B3FEE7B9ECC4F924EE57943DD55D' \
 --data '{
-"customerTenure":1,
-"userType":"CUSTOMER",
-"originalCurrency":"INR",
-"targetCurrency":"USD",
-"items":[
-{
-"name":"Fruits",
-"category":"GROCERY",
-"price":"10.0",
-"quantity":"4"
-},
-{
-"name":"Mobile",
-"category":"OTHERS",
-"price":"10.0",
-"quantity":"9"
-}
-]
-
+    "customerTenure":2,
+    "userType":"CUSTOMER",
+    "originalCurrency":"INR",
+    "targetCurrency":"INR",
+    "items":[
+        {
+            "name":"Fruits",
+            "category":"GROCERY",
+             "price":"10.0",
+             "quantity":"10"
+        },
+        {
+            "name":"Mobile",
+            "category":"OTHERS",
+             "price":"10",
+             "quantity":"9"
+        }
+    ]
+    
 }
