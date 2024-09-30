@@ -8,7 +8,6 @@ It then applies discounts based on various conditions and provides the total bil
 * Java 17
 * Spring Boot 3.3.4
 * Jacoco Plugin 0.0.8
-* Log4j 1.2.5.RELEASE
 * Mockito 5.11.0
 
 #### **Sample Request :**
