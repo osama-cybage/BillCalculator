@@ -1,4 +1,4 @@
-# **Currency Converter & Calculator**
+# **Bill Calculator**
 
 This service calculates the customer's bill, based on the items, their quantity and category.
 It then applies discounts based on various conditions and provides the total bill amount in the required currency.
