@@ -25,28 +25,27 @@ Just execute the command _mvn clean install_ for build and click on 'Run -> _Run
 #### **Sample Request :**
 
 curl --location 'http://localhost:8080/api/calculate' \
---header 'API-Key: valid-api-key' \
---header 'API-Secret: valid-api-secret' \
+--header 'X-API-KEY: test' \
 --header 'Content-Type: application/json' \
---header 'Cookie: JSESSIONID=816753487BB8ED76E89C9BC34C38ADC3' \
---data '
-{
-    "customerTenure":1,
-    "userType":"CUSTOMER",
-    "originalCurrency":"INR",
-    "targetCurrency":"USD",
-    "items":[
+--data '{
+    "user": {
+        "userType": "EMPLOYEE",
+        "customerTenure": "1"
+    },
+    "originalCurrency": "USD",
+    "targetCurrency": "USD",
+    "items": [
         {
-        "name":"Fruits",
-        "category":"GROCERY",
-        "price":"10.0",
-        "quantity":"4"
+            "name": "Fruits",
+            "category": "GROCERY",
+            "price": "10.0",
+            "quantity": "10"
         },
         {
-        "name":"Mobile",
-        "category":"OTHERS",
-        "price":"10.0",
-        "quantity":"9"
+            "name": "Mobile",
+            "category": "OTHERS",
+            "price": "10",
+            "quantity": "9"
         }
     ]
-}
+}'
