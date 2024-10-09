@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: BillCalculatorService
+
+server:
+  port: 8080
+
+currency:
+  exchange:
+    apiKey: 8b5e6f4a0ec4667f3cacd170
+    baseUrl: https://open.er-api.com/v6/latest/
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
