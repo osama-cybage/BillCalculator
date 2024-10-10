@@ -20,7 +20,7 @@ To setup the service locally, execute the below commands in order :
 
 #### **Building and Running the service**
 
-Just execute the command _mvn clean install_ for build and click on 'Run -> _Run as SpringBootApplication'.
+Execute the command _mvn clean install_ for build and click on 'Run -> _Run as SpringBootApplication'.
 
 #### **About the Project code**
 
@@ -43,7 +43,7 @@ _**X-API-KEY : test**_
 
 This service is integrated with a Third Party API https://www.exchangerate-api.com/ to get currency values in real time.
 The service caches the recently accessed data and avoids calling the Exchange Rate API everytime.
-It also uses Circuit Breaker pattern and provides a default response in case the Exchange Rate API isn't responding.
+It uses Circuit Breaker pattern and provides a default response in case the Exchange Rate API isn't responding.
 
 #### **Sample Request :**
 
