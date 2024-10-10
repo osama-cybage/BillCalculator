@@ -74,10 +74,6 @@ curl --location 'http://localhost:8080/api/calculate' \
     ]
 }
 
-Project UML diagram :
-
-![UML class diagram.png](..%2F..%2FUsers%2Fmohammadosama%2FOneDrive%20-%20Nagarro%2FPictures%2FScreenshots%2FUML%20class%20diagram.png)
-
 Use case :
 
 This service can be used at shopping centres, billing counters, to calculate and convert the bill using real time value of currency by calling the Third party API.
